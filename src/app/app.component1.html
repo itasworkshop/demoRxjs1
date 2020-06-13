@@ -1,0 +1,7 @@
+{{title | uppercase }}<br>
+{{birthday | date}}<br>
+{{birthday | date | uppercase}}<br>
+
+<input type="text" [(ngModel)]="searchString$" (ngModelChange)="inputChanged($event)" placeholder="Search">
+
+<button (click)="searchString$=''">Clear</button>
